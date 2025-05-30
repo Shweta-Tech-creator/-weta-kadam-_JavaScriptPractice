@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head><title>DOM Traversal</title></head>
+<body>
+
+<!-- HTML nesting means placing elements inside other elements. This creates a hierarchical structure called the DOM tree. -->
+
+<div id="parent">
+  Parent Div
+  <div id="child">Child Div</div>
+</div>
+
+<script>
+  const child = document.getElementById("child");
+
+  // parentElement refers to the direct parent node of a given element in the DOM tree.
+  console.log(child.parentElement); 
+
+  const parent = document.getElementById("parent");
+
+  // .children returns only element nodes (excluding text and comment nodes),
+  // while .childNodes includes all child nodes (elements, text, comments).
+  console.log(parent.children); 
+
+  // .closest(selector) traverses upward and returns the nearest ancestor that matches the selector.
+  console.log(child.closest("div")); 
+
+  // Adds a click event listener to the child. When clicked, it toggles the "highlight" class on the parent.
+  // Toggling a class means adding it if it's not present, or removing it if it is.
+  child.addEventListener("click", () => {
+    parent.classList.toggle("highlight");
+  });
+</script>
+
+<style>
+  .highlight { background-color: yellow; }
+</style>
+
+</body>
+</html>
