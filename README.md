@@ -71,29 +71,67 @@ DOWN
 
 ---
 
-1. JavaScript is a <span style="color:red"><b>client</b></span>-side scripting language.  
-2. You can declare a variable using `let`, `const`, or <span style="color:red"><b>var</b></span>.  
-3. To assign a string to a variable, use quotes like this:  
-   `let name = <span style="color:red"><b>"John"</b></span>;`  
-4. The <span style="color:red"><b>function</b></span> keyword is used to define a function.  
-5. To output something in the browser console, you use <span style="color:red"><b>console.log</b></span>.  
-6. The data type that stores true or false values is called <span style="color:red"><b>boolean</b></span>.  
-7. To compare two values for equality in value **and** type, use <span style="color:red"><b>===</b></span>.  
-8. The loop that runs as long as a condition is true is the <span style="color:red"><b>while</b></span> loop.  
-9. In JavaScript, arrays are defined using <span style="color:red"><b>square</b></span> brackets.  
-10. An `if` statement checks for a <span style="color:red"><b>condition</b></span> to decide what code to run.  
-11. HTML elements can react to JavaScript using <span style="color:red"><b>events</b></span> like `onclick`.  
-12. The method to convert a string to a number is <span style="color:red"><b>Number()</b></span>.  
-13. To add a new element to the end of an array, use `array.<span style="color:red"><b>push</b></span>()`.  
-14. To check the length of a string, use `string.<span style="color:red"><b>length</b></span>`.  
-15. The operator `+` can be used for both addition and <span style="color:red"><b>concatenation</b></span>.  
-16. JavaScript code is typically run inside the web browser or using <span style="color:red"><b>Node.js</b></span> for server-side JavaScript.  
-17. You can use `document.getElementById()` to access an HTML element by its <span style="color:red"><b>id</b></span>.  
-18. The keyword used to stop the execution of a loop is <span style="color:red"><b>break</b></span>.  
-19. A function can return a value using the <span style="color:red"><b>return</b></span> keyword.  
-20. The `typeof` operator returns the <span style="color:red"><b>type</b></span> of a variable.  
+JavaScript is a __________-side scripting language.
+Answer: client
 
----
+You can declare a variable using let, const, or __________.
+Answer: var
+
+To assign a string to a variable, use quotes like this:
+let name = __________;
+Answer: "John"
+
+The __________ keyword is used to define a function.
+Answer: function
+
+To output something in the browser console, you use __________.
+Answer: console.log
+
+The data type that stores true or false values is called __________.
+Answer: boolean
+
+To compare two values for equality in value and type, use __________.
+Answer: ===
+
+The loop that runs as long as a condition is true is the __________ loop.
+Answer: while
+
+In JavaScript, arrays are defined using __________ brackets.
+Answer: square
+
+An if statement checks for a __________ to decide what code to run.
+Answer: condition
+
+HTML elements can react to JavaScript using __________ like onclick.
+Answer: events
+
+The method to convert a string to a number is __________.
+Answer: Number()
+
+To add a new element to the end of an array, use array.__________()
+Answer: push
+
+To check the length of a string, use string.__________.
+Answer: length
+
+The operator + can be used for both addition and __________.
+Answer: concatenation
+
+JavaScript code is typically run inside the web browser or using __________ for server-side JavaScript.
+Answer: Node.js
+
+You can use document.getElementById() to access an HTML element by its __________.
+Answer: id
+
+The keyword used to stop the execution of a loop is __________.
+Answer: break
+
+A function can return a value using the __________ keyword.
+Answer: return
+
+The typeof operator returns the __________ of a variable.
+Answer: data type
+
 
 
 
