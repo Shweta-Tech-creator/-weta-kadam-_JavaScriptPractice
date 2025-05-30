@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head><title>Video API</title></head>
+<body>
+
+<!-- The <video> element is used to embed a video file in the webpage.
+     The 'controls' attribute adds default play, pause, volume UI. -->
+<video id="myVideo" width="320" height="240" controls>
+  <source src="https://youtu.be/qOv--cPq7h0?feature=shared" type="video/mp4">
+</video><br>
+
+<!-- Buttons use JavaScript to control the video programmatically -->
+<button onclick="myVideo.play()">Play</button>        <!-- Starts the video -->
+<button onclick="myVideo.pause()">Pause</button>      <!-- Pauses the video -->
+<button onclick="toggleMute()">Mute/Unmute</button>   <!-- Toggles mute -->
+<button onclick="myVideo.currentTime += 10">Jump +10s</button> <!-- Skips 10 seconds ahead -->
+
+<p>Time: <span id="timeDisplay">0</span>s</p>
+
+<script>
+  const myVideo = document.getElementById("myVideo");
+  const timeDisplay = document.getElementById("timeDisplay");
+
+  // The 'muted' property controls whether video sound is off (true) or on (false).
+  function toggleMute() {
+    myVideo.muted = !myVideo.muted;
+  }
+
+  // The 'ontimeupdate' event fires as the video plays and its current time changes.
+  // We use it here to display the current playback time.
+  myVideo.ontimeupdate = () => {
+    timeDisplay.textContent = Math.floor(myVideo.currentTime);
+  };
+
+  // The 'currentTime' property lets us read or set the video playback position in seconds.
+  // Adding 10 to currentTime skips the video forward by 10 seconds.
+</script>
+
+</body>
+</html>
